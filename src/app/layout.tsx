@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import StoreProvider from "./StoreProvider";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,7 +18,41 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <head>
+        {/* remix icon */}
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+        {/* <!-- Layout config Js --> */}
+        {/* <script src="/assets/js/layout.js"></script> */}
+        {/* <!-- Icons CSS --> */}
+        <link rel="stylesheet" href="/assets/scss/icons.scss" />
+        {/* <!-- Tailwind CSS --> */}
+        <link rel="stylesheet" href="/assets/scss/tailwind.scss" />
+      </head>
+      <body className={inter.className}>
+        <StoreProvider>
+          {children}
+        </StoreProvider>
+
+
+        <Script src='/assets/libs/choices.js/public/assets/Scripts/choices.min.js' strategy="lazyOnload" ></Script>
+        <Script src="/assets/libs/@popperjs/core/umd/popper.min.js" strategy="lazyOnload" ></Script>
+        <Script src="/assets/libs/tippy.js/tippy-bundle.umd.min.js" strategy="lazyOnload" ></Script>
+        <Script src="/assets/libs/simplebar/simplebar.min.js" strategy="lazyOnload" ></Script>
+        <Script src="/assets/libs/prismjs/prism.js" strategy="lazyOnload" ></Script>
+        <Script src="/assets/libs/lucide/umd/lucide.js" strategy="lazyOnload" ></Script>
+        {/* <!--apexchart js--> */}
+        <Script src="/assets/libs/apexcharts/apexcharts.min.js" strategy="lazyOnload" ></Script>
+
+        {/* <!--dashboard ecommerce init js--> */}
+        <Script src="/assets/js/pages/dashboards-ecommerce.init.js" strategy="lazyOnload" ></Script>
+
+        {/* <!-- App js --> */}
+        <Script src="/assets/js/app.js" strategy="lazyOnload" ></Script>
+
+        <Script src="/assets/js/layout.js" strategy="lazyOnload" ></Script>
+        <Script src="/assets/js/tailwick.bundle.js" strategy="lazyOnload" ></Script>
+
+      </body>
     </html>
   );
 }
