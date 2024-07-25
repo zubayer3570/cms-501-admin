@@ -127,7 +127,7 @@ var employeeList = [
         "id": 1,
         "ID": "#TWE1001528",
         "Name": "Willie Torres",
-        "img": "assets/images/users/user-1.jpg",
+        "img": "/assets/images/users/user-1.jpg",
         "Role": "Nuxt JS Developer",
         "Email": "willie@tailwick.com",
         "Phone": "070 3715 3689",
@@ -139,7 +139,7 @@ var employeeList = [
         "id": 2,
         "ID": "#TWE1001524",
         "Name": "Patricia Garcia",
-        "img": "assets/images/users/user-2.jpg",
+        "img": "/assets/images/users/user-2.jpg",
         "Role": "ASP.Net Developer",
         "Email": "PatriciaJGarcia@tailwick.com",
         "Phone": "077 7317 7572",
@@ -151,7 +151,7 @@ var employeeList = [
         "id": 3,
         "ID": "#TWE1001506",
         "Name": "Tonya Johnson",
-        "img": "assets/images/users/user-3.jpg",
+        "img": "/assets/images/users/user-3.jpg",
         "Role": "Project Manager",
         "Email": "TonyaEJohnson@tailwick.com",
         "Phone": "079 2383 2340",
@@ -163,7 +163,7 @@ var employeeList = [
         "id": 4,
         "ID": "#TWE1001502",
         "Name": "Jose White",
-        "img": "assets/images/users/user-4.jpg",
+        "img": "/assets/images/users/user-4.jpg",
         "Role": "React Developer",
         "Email": "ameida@tailwick.com",
         "Phone": "03476 56 14 12",
@@ -175,7 +175,7 @@ var employeeList = [
         "id": 5,
         "ID": "#TWE1001503",
         "Name": "Juliette Fecteau",
-        "img": "assets/images/users/user-1.jpg",
+        "img": "/assets/images/users/user-1.jpg",
         "Role": "Sr. Angular Developer",
         "Email": "JulietteFecteau@tailwick.com",
         "Phone": "07231 96 25 88",
@@ -187,7 +187,7 @@ var employeeList = [
         "id": 6,
         "ID": "#TWE1001504",
         "Name": "Jonas Frederiksen",
-        "img": "assets/images/users/user-2.jpg",
+        "img": "/assets/images/users/user-2.jpg",
         "Role": "Team Leader",
         "Email": "jonas@tailwick.com",
         "Phone": "61 53 62 05",
@@ -199,7 +199,7 @@ var employeeList = [
         "id": 7,
         "ID": "#TWE1001505",
         "Name": "Kim Broberg",
-        "img": "assets/images/users/user-4.jpg",
+        "img": "/assets/images/users/user-4.jpg",
         "Role": "UI / UX Designer",
         "Email": "KimBroberg@tailwick.com",
         "Phone": "040 382 2096",
@@ -211,7 +211,7 @@ var employeeList = [
         "id": 8,
         "ID": "#TWE1001507",
         "Name": "Nancy Reynolds",
-        "img": "assets/images/users/user-1.jpg",
+        "img": "/assets/images/users/user-1.jpg",
         "Role": "Web Designer",
         "Email": "NancyM@tailwick.com",
         "Phone": "0391 13 79 21",
@@ -223,7 +223,7 @@ var employeeList = [
         "id": 9,
         "ID": "#TWE1001508",
         "Name": "Thomas Hatfield",
-        "img": "assets/images/users/user-2.jpg",
+        "img": "/assets/images/users/user-2.jpg",
         "Role": "VueJs Developer",
         "Email": "thomas@tailwick.com",
         "Phone": "0911 47 65 49",
@@ -235,7 +235,7 @@ var employeeList = [
         "id": 10,
         "ID": "#TWE1001509",
         "Name": "Holly Kavanaugh",
-        "img": "assets/images/users/user-3.jpg",
+        "img": "/assets/images/users/user-3.jpg",
         "Role": "Laravel Developer",
         "Email": "HollyKavanaugh@tailwick.com",
         "Phone": "819 947 5846",
@@ -247,7 +247,7 @@ var employeeList = [
         "id": 11,
         "ID": "#TWE1001510",
         "Name": "Kim Broberg",
-        "img": "assets/images/users/user-4.jpg",
+        "img": "/assets/images/users/user-4.jpg",
         "Role": "UI / UX Designer",
         "Email": "KimBroberg@tailwick.com",
         "Phone": "040 382 2096",
@@ -259,7 +259,7 @@ var employeeList = [
         "id": 12,
         "ID": "#TWE1001511",
         "Name": "Juliette Fecteau",
-        "img": "assets/images/users/user-1.jpg",
+        "img": "/assets/images/users/user-1.jpg",
         "Role": "Sr. Angular Developer",
         "Email": "JulietteFecteau@tailwick.com",
         "Phone": "07231 96 25 88",
@@ -522,7 +522,7 @@ Array.prototype.slice.call(forms).forEach(function (form) {
                 ID: `<a href="#!" class="transition-all duration-150 ease-linear text-custom-500 hover:text-custom-600"> ` + employeeId.value + `</a>`,
                 Name: `<a href="#!" class="flex items-center gap-3">
                             <div div class="w-6 h-6 rounded-full shrink-0 bg-slate-100">
-                                <img src="assets/images/users/user-dummy-img.jpg" alt="" class="h-6 rounded-full">
+                                <img src="/assets/images/users/user-dummy-img.jpg" alt="" class="h-6 rounded-full">
                             </div>
                             <h6 class="grow">`+ employeeInput.value + `</h6>
                         </a>`,
@@ -566,7 +566,7 @@ Array.prototype.slice.call(forms).forEach(function (form) {
                         ID: `<a href="#!" class="transition-all duration-150 ease-linear text-custom-500 hover:text-custom-600">`+ employeeId.value + `</a>`,
                         Name: `<a href="#!" class="flex items-center gap-3">
                             <div div class="w-6 h-6 rounded-full shrink-0 bg-slate-100">
-                                <img src="assets/images/users/user-dummy-img.jpg" alt="" class="h-6 rounded-full">
+                                <img src="/assets/images/users/user-dummy-img.jpg" alt="" class="h-6 rounded-full">
                             </div>
                             <h6 class="grow">`+ employeeInput.value + `</h6>
                         </a>`,

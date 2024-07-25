@@ -19,7 +19,7 @@ export default function CartSidePanel() {
                     <div className="flex flex-col gap-4">
                         <div className="flex gap-2 product">
                             <div className="flex items-center justify-center w-12 h-12 rounded-md bg-slate-100 shrink-0 dark:bg-zink-500">
-                                <img src="./assets/images/img-012.png" alt="" className="h-8" />
+                                <img src="/assets/images/product/img-01.png" alt="" className="h-8" />
                             </div>
                             <div className="overflow-hidden grow">
                                 <div className="ltr:float-right rtl:float-left">
@@ -35,7 +35,7 @@ export default function CartSidePanel() {
                                 <div className="flex items-center justify-between gap-3">
                                     <div className="inline-flex text-center input-step">
                                         <button type="button" className="border w-9 h-9 leading-[15px] minus bg-white dark:bg-zink-700 dark:border-zink-500 ltr:rounded-l rtl:rounded-r transition-all duration-200 ease-linear border-slate-200 text-slate-500 dark:text-zink-200 hover:bg-custom-500 dark:hover:bg-custom-500 hover:text-custom-50 dark:hover:text-custom-50 hover:border-custom-500 dark:hover:border-custom-500 focus:bg-custom-500 dark:focus:bg-custom-500 focus:border-custom-500 dark:focus:border-custom-500 focus:text-custom-50 dark:focus:text-custom-50"><i data-lucide="minus" className="inline-block size-4"></i></button>
-                                        <input type="number" className="w-12 text-center h-9 border-y product-quantity dark:bg-zink-700 focus:shadow-none dark:border-zink-500" value="2" min="0" max="100" readOnly={true} />
+                                        <input type="number" className="w-12 text-center h-9 border-y product-quantity dark:bg-zink-700 focus:shadow-none dark:border-zink-500" value="2" min="0" max="100" readOnly />
                                         <button type="button" className="transition-all duration-200 ease-linear bg-white border dark:bg-zink-700 dark:border-zink-500 ltr:rounded-r rtl:rounded-l w-9 h-9 border-slate-200 plus text-slate-500 dark:text-zink-200 hover:bg-custom-500 dark:hover:bg-custom-500 hover:text-custom-50 dark:hover:text-custom-50 hover:border-custom-500 dark:hover:border-custom-500 focus:bg-custom-500 dark:focus:bg-custom-500 focus:border-custom-500 dark:focus:border-custom-500 focus:text-custom-50 dark:focus:text-custom-50"><i data-lucide="plus" className="inline-block size-4"></i></button>
                                     </div>
                                     <h6 className="product-line-price">310.64</h6>
@@ -44,7 +44,7 @@ export default function CartSidePanel() {
                         </div>
                         <div className="flex gap-2 product">
                             <div className="flex items-center justify-center w-12 h-12 rounded-md bg-slate-100 shrink-0 dark:bg-zink-500">
-                                <img src="./assets/images/img-03.png" alt="" className="h-8" />
+                                <img src="/assets/images/product/img-03.png" alt="" className="h-8" />
                             </div>
                             <div className="overflow-hidden grow">
                                 <div className="ltr:float-right rtl:float-left">
@@ -60,7 +60,7 @@ export default function CartSidePanel() {
                                 <div className="flex items-center justify-between gap-3">
                                     <div className="inline-flex text-center input-step">
                                         <button type="button" className="border w-9 h-9 leading-[15px] minus bg-white dark:bg-zink-700 dark:border-zink-500 ltr:rounded-l rtl:rounded-r transition-all duration-200 ease-linear border-slate-200 text-slate-500 dark:text-zink-200 hover:bg-custom-500 dark:hover:bg-custom-500 hover:text-custom-50 dark:hover:text-custom-50 hover:border-custom-500 dark:hover:border-custom-500 focus:bg-custom-500 dark:focus:bg-custom-500 focus:border-custom-500 dark:focus:border-custom-500 focus:text-custom-50 dark:focus:text-custom-50"><i data-lucide="minus" className="inline-block size-4"></i></button>
-                                        <input type="number" className="w-12 text-center h-9 border-y product-quantity dark:bg-zink-700 focus:shadow-none dark:border-zink-500" value="1" min="0" max="100" readOnly={true} />
+                                        <input type="number" className="w-12 text-center h-9 border-y product-quantity dark:bg-zink-700 focus:shadow-none dark:border-zink-500" value="1" min="0" max="100" readOnly />
                                         <button type="button" className="transition-all duration-200 ease-linear bg-white border dark:bg-zink-700 dark:border-zink-500 ltr:rounded-r rtl:rounded-l w-9 h-9 border-slate-200 plus text-slate-500 dark:text-zink-200 hover:bg-custom-500 dark:hover:bg-custom-500 hover:text-custom-50 dark:hover:text-custom-50 hover:border-custom-500 dark:hover:border-custom-500 focus:bg-custom-500 dark:focus:bg-custom-500 focus:border-custom-500 dark:focus:border-custom-500 focus:text-custom-50 dark:focus:text-custom-50"><i data-lucide="plus" className="inline-block size-4"></i></button>
                                     </div>
                                     <h6 className="product-line-price">349.95</h6>
@@ -69,7 +69,7 @@ export default function CartSidePanel() {
                         </div>
                         <div className="flex gap-2 product">
                             <div className="flex items-center justify-center w-12 h-12 rounded-md bg-slate-100 shrink-0 dark:bg-zink-500">
-                                <img src="./assets/images/img-09.png" alt="" className="h-8" />
+                                <img src="/assets/images/product/img-09.png" alt="" className="h-8" />
                             </div>
                             <div className="overflow-hidden grow">
                                 <div className="ltr:float-right rtl:float-left">
@@ -85,7 +85,7 @@ export default function CartSidePanel() {
                                 <div className="flex items-center justify-between gap-3">
                                     <div className="inline-flex text-center input-step">
                                         <button type="button" className="border w-9 h-9 leading-[15px] minus bg-white dark:bg-zink-700 dark:border-zink-500 ltr:rounded-l rtl:rounded-r transition-all duration-200 ease-linear border-slate-200 text-slate-500 dark:text-zink-200 hover:bg-custom-500 dark:hover:bg-custom-500 hover:text-custom-50 dark:hover:text-custom-50 hover:border-custom-500 dark:hover:border-custom-500 focus:bg-custom-500 dark:focus:bg-custom-500 focus:border-custom-500 dark:focus:border-custom-500 focus:text-custom-50 dark:focus:text-custom-50"><i data-lucide="minus" className="inline-block size-4"></i></button>
-                                        <input type="number" className="w-12 text-center h-9 border-y product-quantity dark:bg-zink-700 focus:shadow-none dark:border-zink-500" value="4" min="0" max="100" readOnly={true} />
+                                        <input type="number" className="w-12 text-center h-9 border-y product-quantity dark:bg-zink-700 focus:shadow-none dark:border-zink-500" value="4" min="0" max="100" readOnly />
                                         <button type="button" className="transition-all duration-200 ease-linear bg-white border dark:bg-zink-700 dark:border-zink-500 ltr:rounded-r rtl:rounded-l w-9 h-9 border-slate-200 plus text-slate-500 dark:text-zink-200 hover:bg-custom-500 dark:hover:bg-custom-500 hover:text-custom-50 dark:hover:text-custom-50 hover:border-custom-500 dark:hover:border-custom-500 focus:bg-custom-500 dark:focus:bg-custom-500 focus:border-custom-500 dark:focus:border-custom-500 focus:text-custom-50 dark:focus:text-custom-50"><i data-lucide="plus" className="inline-block size-4"></i></button>
                                     </div>
                                     <h6 className="product-line-price end">2,186.96</h6>

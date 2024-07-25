@@ -224,5 +224,5 @@ xhttp.onload = function () {
     });
 }
 //jeson data file
-xhttp.open("GET", "assets/json/product-list.json");
+xhttp.open("GET", "/assets/json/product-list.json");
 xhttp.send();

@@ -48,8 +48,8 @@ export default function Login() {
             <div className="mb-0 w-screen lg:mx-auto lg:w-[500px] card shadow-lg border-none shadow-slate-100 relative">
                 <div className="!px-10 !py-12 card-body">
                     <Link href="#!">
-                        <img src="assets/images/logo-light.png" alt="" className="hidden h-6 mx-auto dark:block" />
-                        <img src="assets/images/logo-dark.png" alt="" className="block h-6 mx-auto dark:hidden" />
+                        <img src="/assets/images/logo-light.png" alt="" className="hidden h-6 mx-auto dark:block" />
+                        <img src="/assets/images/logo-dark.png" alt="" className="block h-6 mx-auto dark:hidden" />
                     </Link>
 
                     <div className="mt-8 text-center">
@@ -76,7 +76,7 @@ export default function Login() {
                                 <input id="checkboxDefault1" className="border rounded-sm appearance-none size-4 bg-slate-100 border-slate-200 dark:bg-zink-600 dark:border-zink-500 checked:bg-custom-500 checked:border-custom-500 dark:checked:bg-custom-500 dark:checked:border-custom-500 checked:disabled:bg-custom-400 checked:disabled:border-custom-400" type="checkbox" value="" />
                                 <label className="inline-block text-base font-medium align-middle cursor-pointer">Remember me</label>
                             </div>
-                            <div id="remember-error" className="hidden mt-1 text-sm text-red-500">Please check the "Remember me" before submitting the form.</div>
+                            <div id="remember-error" className="hidden mt-1 text-sm text-red-500">Please check the &quot;Remember me&quot; before submitting the form.</div>
                         </div>
                         <div className="mt-10">
                             <button type="submit" className="w-full text-white btn bg-custom-500 border-custom-500 hover:text-white hover:bg-custom-600 hover:border-custom-600 focus:text-white focus:bg-custom-600 focus:border-custom-600 focus:ring focus:ring-custom-100 active:text-white active:bg-custom-600 active:border-custom-600 active:ring active:ring-custom-100 dark:ring-custom-400/20">Sign In</button>
@@ -94,7 +94,7 @@ export default function Login() {
                         </div>
 
                         <div className="mt-10 text-center">
-                            <p className="mb-0 text-slate-500 dark:text-zink-200">Don't have an account ? <a href="auth-register-basic.html" className="font-semibold underline transition-all duration-150 ease-linear text-slate-500 dark:text-zink-200 hover:text-custom-500 dark:hover:text-custom-500"> SignUp</a> </p>
+                            <p className="mb-0 text-slate-500 dark:text-zink-200">Don&apos;t have an account ? <a href="auth-register-basic.html" className="font-semibold underline transition-all duration-150 ease-linear text-slate-500 dark:text-zink-200 hover:text-custom-500 dark:hover:text-custom-500"> SignUp</a> </p>
                         </div>
                     </form>
                 </div>

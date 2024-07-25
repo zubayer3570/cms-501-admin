@@ -2,7 +2,7 @@
   
   {
     "product_code": "#TAD-232100071",
-    "img":"assets/images/product/img-02.png",
+    "img":"/assets/images/product/img-02.png",
     "product_name": "Smartest Printed T-shirt",
     "category": "Fashion",
     "price": "$79.99",
@@ -12,7 +12,7 @@
   },
   {
     "product_code": "#TAD-232100072",
-    "img":"assets/images/product/img-03.png",
+    "img":"/assets/images/product/img-03.png",
     "product_name": "Mesh Ergonomic Black Chair",
     "category": "Furniture",
     "price": "$214.47",
@@ -22,7 +22,7 @@
   },
   {
     "product_code": "#TAD-232100073",
-    "img":"assets/images/product/img-05.png",
+    "img":"/assets/images/product/img-05.png",
     "product_name": "Fastcolors Typography Men",
     "category": "Fashion",
     "price": "$119.12",
@@ -32,7 +32,7 @@
   },
   {
     "product_code": "#TAD-232100074",
-    "img":"assets/images/product/img-06.png",
+    "img":"/assets/images/product/img-06.png",
     "product_name": "Techel Black Bluetooth Soundbar",
     "category": "Electronics",
     "price": "$452.99",
@@ -42,7 +42,7 @@
   },
   {
     "product_code": "#TAD-232100075",
-    "img":"assets/images/product/img-07.png",
+    "img":"/assets/images/product/img-07.png",
     "product_name": "Bovet Fleurier AIFSQ029",
     "category": "Home Decor",
     "price": "$119.99",
@@ -52,7 +52,7 @@
   },
   {
     "product_code": "#TAD-232100076",
-    "img":"assets/images/product/img-08.png",
+    "img":"/assets/images/product/img-08.png",
     "product_name": "Iron 1000 W Dry",
     "category": "Electronics",
     "price": "$84.99",
@@ -62,7 +62,7 @@
   },
   {
     "product_code": "#TAD-232100077",
-    "img":"assets/images/product/img-09.png",
+    "img":"/assets/images/product/img-09.png",
     "product_name": "Roar Twill Blue Baseball Cap",
     "category": "Fashion",
     "price": "$49.99",
@@ -72,7 +72,7 @@
   },
   {
     "product_code": "#TAD-232100078",
-    "img":"assets/images/product/img-10.png",
+    "img":"/assets/images/product/img-10.png",
     "product_name": "Crop tops for Women western wear",
     "category": "Fashion",
     "price": "$129.99",
@@ -82,7 +82,7 @@
   },
   {
     "product_code": "#TAD-232100079",
-    "img":"assets/images/product/img-11.png",
+    "img":"/assets/images/product/img-11.png",
     "product_name": "Smartees Printed Men Round Neck White",
     "category": "Fashion",
     "price": "$410.43",
@@ -92,7 +92,7 @@
   },
   {
     "product_code": "#TAD-232100080",
-    "img":"assets/images/product/img-08.png",
+    "img":"/assets/images/product/img-08.png",
     "product_name": "Aahwan Solid Women Beige Baggy Shorts",
     "category": "Fashion",
     "price": "$64.70",

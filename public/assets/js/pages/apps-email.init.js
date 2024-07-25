@@ -18,7 +18,7 @@ if (ckClassicEditor) {
     });
 }
 
-var url = "assets/json/";
+var url = "/assets/json/";
 var allmaillist = '';
 // showing loading
 

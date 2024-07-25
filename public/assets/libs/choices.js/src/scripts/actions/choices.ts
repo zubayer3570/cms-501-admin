@@ -43,7 +43,7 @@ export const addChoice = ({
   customProperties,
   placeholder,
   keyCode,
-}): AddChoiceAction => ({
+}: any): AddChoiceAction => ({
   type: ACTION_TYPES.ADD_CHOICE,
   value,
   label,

@@ -19,7 +19,7 @@ function setupFilter() {
 }
 
 
-var url = "assets/json/";
+var url = "/assets/json/";
 var allNotesList = '';
 var currentPage = 1;
 var itemsPerPage = 8;

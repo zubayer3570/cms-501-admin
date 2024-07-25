@@ -3,6 +3,10 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import StoreProvider from "./StoreProvider";
 import Script from "next/script";
+import Customizer from "@/components/shared/Customizer";
+import Topbar from "@/components/shared/Topbar";
+import Sidebar from "@/components/shared/Sidebar";
+import Footer from "@/components/shared/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -17,42 +21,81 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+
+    <html lang="en" className="light scroll-smooth group" data-layout="vertical" data-sidebar="light" data-sidebar-size="lg"
+      data-mode="light" data-topbar="light" data-skin="default" data-navbar="sticky" data-content="fluid" dir="ltr">
       <head>
-        {/* remix icon */}
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
+        <meta charSet="utf-8" />
+        {/* <title>{{ title }} | Tailwick - Admin & Dashboard Template</title> */}
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+        <meta content="Minimal Admin & Dashboard Template" name="description" />
+        <meta content="Themesdesign" name="author" />
+        {/* <!-- App favicon --> */}
+        <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+
+
         {/* <!-- Layout config Js --> */}
-        {/* <script src="/assets/js/layout.js"></script> */}
+        <Script src="/assets/js/layout.js" strategy="afterInteractive" ></Script>
         {/* <!-- Icons CSS --> */}
         <link rel="stylesheet" href="/assets/scss/icons.scss" />
         {/* <!-- Tailwind CSS --> */}
         <link rel="stylesheet" href="/assets/scss/tailwind.scss" />
+
+        {/* remix icon */}
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+
       </head>
-      <body className={inter.className}>
+
+      <body className="text-base bg-body-bg text-body font-public dark:text-zink-100 dark:bg-zink-800 group-data-[skin=bordered]:bg-body-bordered group-data-[skin=bordered]:dark:bg-zink-700">
+
         <StoreProvider>
-          {children}
+          <div className="group-data-[sidebar-size=sm]:min-h-sm group-data-[sidebar-size=sm]:relative">
+            <Sidebar />
+            <Topbar />
+
+            <div className="relative min-h-screen group-data-[sidebar-size=sm]:min-h-sm">
+
+              {/* {{> partials / page - wrapper}} */}
+              <div className="group-data-[sidebar-size=lg]:ltr:md:ml-vertical-menu group-data-[sidebar-size=lg]:rtl:md:mr-vertical-menu group-data-[sidebar-size=md]:ltr:ml-vertical-menu-md group-data-[sidebar-size=md]:rtl:mr-vertical-menu-md group-data-[sidebar-size=sm]:ltr:ml-vertical-menu-sm group-data-[sidebar-size=sm]:rtl:mr-vertical-menu-sm pt-[calc(theme('spacing.header')_*_1)] pb-[calc(theme('spacing.header')_*_0.8)] px-4 group-data-[navbar=bordered]:pt-[calc(theme('spacing.header')_*_1.3)] group-data-[navbar=hidden]:pt-0 group-data-[layout=horizontal]:mx-auto group-data-[layout=horizontal]:max-w-screen-2xl group-data-[layout=horizontal]:px-0 group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:ltr:md:ml-auto group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:rtl:md:mr-auto group-data-[layout=horizontal]:md:pt-[calc(theme('spacing.header')_*_1.6)] group-data-[layout=horizontal]:px-3 group-data-[layout=horizontal]:group-data-[navbar=hidden]:pt-[calc(theme('spacing.header')_*_0.9)]">
+
+                <div className="container-fluid group-data-[content=boxed]:max-w-boxed mx-auto">
+
+                  {children}
+
+                </div>
+                {/* <!-- container-fluid --> */}
+              </div>
+              <Footer />
+            </div>
+            {/* <!-- End Page-content --> */}
+
+
+          </div>
+
+          {/* customizer */}
+          <Customizer />
+
         </StoreProvider>
 
 
-        <Script src='/assets/libs/choices.js/public/assets/Scripts/choices.min.js' strategy="lazyOnload" ></Script>
-        <Script src="/assets/libs/@popperjs/core/umd/popper.min.js" strategy="lazyOnload" ></Script>
-        <Script src="/assets/libs/tippy.js/tippy-bundle.umd.min.js" strategy="lazyOnload" ></Script>
-        <Script src="/assets/libs/simplebar/simplebar.min.js" strategy="lazyOnload" ></Script>
-        <Script src="/assets/libs/prismjs/prism.js" strategy="lazyOnload" ></Script>
-        <Script src="/assets/libs/lucide/umd/lucide.js" strategy="lazyOnload" ></Script>
-        {/* <!--apexchart js--> */}
-        <Script src="/assets/libs/apexcharts/apexcharts.min.js" strategy="lazyOnload" ></Script>
 
-        {/* <!--dashboard ecommerce init js--> */}
-        <Script src="/assets/js/pages/dashboards-ecommerce.init.js" strategy="lazyOnload" ></Script>
+        {/* vendor-scripts */}
+        <Script src='assets/libs/choices.js/public/assets/scripts/choices.min.js' strategy="afterInteractive" ></Script>
+        <Script src="/assets/libs/@popperjs/core/umd/popper.min.js" strategy="afterInteractive" ></Script>
+        <Script src="/assets/libs/tippy.js/tippy-bundle.umd.min.js" strategy="afterInteractive" ></Script>
+        <Script src="/assets/libs/simplebar/simplebar.min.js" strategy="afterInteractive" ></Script>
+        <Script src="/assets/libs/prismjs/prism.js" strategy="afterInteractive" ></Script>
+        <Script src="/assets/libs/lucide/umd/lucide.js" strategy="afterInteractive" ></Script>
+        <Script src="/assets/js/tailwick.bundle.js" strategy="afterInteractive" ></Script>
+
+
+
 
         {/* <!-- App js --> */}
-        <Script src="/assets/js/app.js" strategy="lazyOnload" ></Script>
-
-        <Script src="/assets/js/layout.js" strategy="lazyOnload" ></Script>
-        <Script src="/assets/js/tailwick.bundle.js" strategy="lazyOnload" ></Script>
+        <Script src="/assets/js/app.js" strategy="afterInteractive" ></Script>
 
       </body>
-    </html>
+    </html >
   );
 }

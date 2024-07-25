@@ -115,7 +115,7 @@ xhttp.onload = function () {
     });
     customerList.remove("id", '<a href="javascript:void(0);" class="fw-medium link-primary id">#VZ2101</a>');
 }
-xhttp.open("GET", "assets/json/table-customer-list.json");
+xhttp.open("GET", "/assets/json/table-customer-list.json");
 xhttp.send();
 
 isCount = new DOMParser().parseFromString(

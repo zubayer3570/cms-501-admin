@@ -4,6 +4,8 @@ module.exports = {
     content: [
         "./public/index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
+        "./src/**/**/*.{js,ts,jsx,tsx}",
+        "./src/**/**/**/*.{js,ts,jsx,tsx}",
         "./node_modules/simplebar-react/**/*",
         "./node_modules/apexcharts/**/*",
         "./node_modules/@fullcalendar/**/*",
