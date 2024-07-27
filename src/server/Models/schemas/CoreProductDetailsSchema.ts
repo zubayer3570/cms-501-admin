@@ -10,16 +10,19 @@ export const CoreProductDetailsSchema = {
     },
     product_id: {
         type: DataTypes.INTEGER,
+        allowNull: true
     },
     detail_type: {
-        type: DataTypes.INTEGER
+        type: DataTypes.INTEGER,
+        allowNull: true
     },
     detail_description: {
         type: DataTypes.TEXT,
+        allowNull: true
     },
     detail_url: {
         type: DataTypes.STRING(255),
-        collate: 'utf8mb4_general_ci'
+        allowNull: true
     },
     created_at: {
         type: DataTypes.DATE,

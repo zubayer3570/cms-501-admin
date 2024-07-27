@@ -36,7 +36,7 @@ export default function RootLayout({
 
 
         {/* <!-- Layout config Js --> */}
-        <Script src="/assets/js/layout.js" strategy="afterInteractive" ></Script>
+        <Script src="/assets/js/layout.js" strategy="beforeInteractive" ></Script>
         {/* <!-- Icons CSS --> */}
         <link rel="stylesheet" href="/assets/scss/icons.scss" />
         {/* <!-- Tailwind CSS --> */}
@@ -47,36 +47,35 @@ export default function RootLayout({
 
       </head>
 
+
       <body className="text-base bg-body-bg text-body font-public dark:text-zink-100 dark:bg-zink-800 group-data-[skin=bordered]:bg-body-bordered group-data-[skin=bordered]:dark:bg-zink-700">
 
-        <StoreProvider>
-          <div className="group-data-[sidebar-size=sm]:min-h-sm group-data-[sidebar-size=sm]:relative">
-            <Sidebar />
-            <Topbar />
+        <div className="group-data-[sidebar-size=sm]:min-h-sm group-data-[sidebar-size=sm]:relative">
+          <Sidebar />
+          <Topbar />
 
-            <div className="relative min-h-screen group-data-[sidebar-size=sm]:min-h-sm">
+          <div className="relative min-h-screen group-data-[sidebar-size=sm]:min-h-sm">
 
-              {/* {{> partials / page - wrapper}} */}
-              <div className="group-data-[sidebar-size=lg]:ltr:md:ml-vertical-menu group-data-[sidebar-size=lg]:rtl:md:mr-vertical-menu group-data-[sidebar-size=md]:ltr:ml-vertical-menu-md group-data-[sidebar-size=md]:rtl:mr-vertical-menu-md group-data-[sidebar-size=sm]:ltr:ml-vertical-menu-sm group-data-[sidebar-size=sm]:rtl:mr-vertical-menu-sm pt-[calc(theme('spacing.header')_*_1)] pb-[calc(theme('spacing.header')_*_0.8)] px-4 group-data-[navbar=bordered]:pt-[calc(theme('spacing.header')_*_1.3)] group-data-[navbar=hidden]:pt-0 group-data-[layout=horizontal]:mx-auto group-data-[layout=horizontal]:max-w-screen-2xl group-data-[layout=horizontal]:px-0 group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:ltr:md:ml-auto group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:rtl:md:mr-auto group-data-[layout=horizontal]:md:pt-[calc(theme('spacing.header')_*_1.6)] group-data-[layout=horizontal]:px-3 group-data-[layout=horizontal]:group-data-[navbar=hidden]:pt-[calc(theme('spacing.header')_*_0.9)]">
+            {/* {{> partials / page - wrapper}} */}
+            <div className="group-data-[sidebar-size=lg]:ltr:md:ml-vertical-menu group-data-[sidebar-size=lg]:rtl:md:mr-vertical-menu group-data-[sidebar-size=md]:ltr:ml-vertical-menu-md group-data-[sidebar-size=md]:rtl:mr-vertical-menu-md group-data-[sidebar-size=sm]:ltr:ml-vertical-menu-sm group-data-[sidebar-size=sm]:rtl:mr-vertical-menu-sm pt-[calc(theme('spacing.header')_*_1)] pb-[calc(theme('spacing.header')_*_0.8)] px-4 group-data-[navbar=bordered]:pt-[calc(theme('spacing.header')_*_1.3)] group-data-[navbar=hidden]:pt-0 group-data-[layout=horizontal]:mx-auto group-data-[layout=horizontal]:max-w-screen-2xl group-data-[layout=horizontal]:px-0 group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:ltr:md:ml-auto group-data-[layout=horizontal]:group-data-[sidebar-size=lg]:rtl:md:mr-auto group-data-[layout=horizontal]:md:pt-[calc(theme('spacing.header')_*_1.6)] group-data-[layout=horizontal]:px-3 group-data-[layout=horizontal]:group-data-[navbar=hidden]:pt-[calc(theme('spacing.header')_*_0.9)]">
 
-                <div className="container-fluid group-data-[content=boxed]:max-w-boxed mx-auto">
-
+              <div className="container-fluid group-data-[content=boxed]:max-w-boxed mx-auto">
+                <StoreProvider>
                   {children}
+                </StoreProvider>
 
-                </div>
-                {/* <!-- container-fluid --> */}
               </div>
-              <Footer />
+              {/* <!-- container-fluid --> */}
             </div>
-            {/* <!-- End Page-content --> */}
-
-
+            <Footer />
           </div>
+          {/* <!-- End Page-content --> */}
 
-          {/* customizer */}
-          <Customizer />
 
-        </StoreProvider>
+        </div>
+
+        {/* customizer */}
+        <Customizer />
 
 
 
@@ -89,13 +88,15 @@ export default function RootLayout({
         <Script src="/assets/libs/lucide/umd/lucide.js" strategy="afterInteractive" ></Script>
         <Script src="/assets/js/tailwick.bundle.js" strategy="afterInteractive" ></Script>
 
-
-
-
         {/* <!-- App js --> */}
         <Script src="/assets/js/app.js" strategy="afterInteractive" ></Script>
-
+        
       </body>
+
+
+
+
+
     </html >
   );
 }

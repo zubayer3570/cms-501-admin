@@ -1,8 +1,8 @@
-import Login from '@/components/pages/Login/Login'
+import Logout from '@/components/pages/Logout/Logout'
 import React from 'react'
 
 export default function page() {
     return (
-        <Login />
+        <Logout />
     )
 }
